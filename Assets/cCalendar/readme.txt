@@ -1,0 +1,1 @@
+For any inquiries or for support, contact Anthony Smith at asmith@anthonysjournal.info

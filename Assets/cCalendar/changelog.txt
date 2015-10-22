@@ -1,0 +1,6 @@
+v2.0
+- Added Alarms to the calendar
+
+v1.1
+- Added support for customized month abbreviations
+- Calling init before resume is no longer necessary, it gets called automatically by resume. (For loading from player prefs, calling init(true) or load is still required).

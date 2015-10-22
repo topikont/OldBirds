@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: 3fb1c93956e787546ab51a45ef49d192
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Camera01
+    100002: Camera01.Target
+    100004: Camera02
+    100006: Camera02.Target
+    100008: coffee
+    100010: CylGizmo01
+    100012: don't try to bend spoon hi
+    100014: don't try to bend spoon lo
+    100016: hi rez cup
+    100018: hi rez spoon and cup
+    100020: hi- rez saucer
+    100022: lo rez cup
+    100024: lo rez saucer
+    100026: lo rez spoon and cup
+    100028: //RootNode
+    100030: Spot01
+    100032: Spot01.Target
+    100034: Spot02
+    100036: Spot02.Target
+    100038: surface table
+    400000: Camera01
+    400002: Camera01.Target
+    400004: Camera02
+    400006: Camera02.Target
+    400008: coffee
+    400010: CylGizmo01
+    400012: don't try to bend spoon hi
+    400014: don't try to bend spoon lo
+    400016: hi rez cup
+    400018: hi rez spoon and cup
+    400020: hi- rez saucer
+    400022: lo rez cup
+    400024: lo rez saucer
+    400026: lo rez spoon and cup
+    400028: //RootNode
+    400030: Spot01
+    400032: Spot01.Target
+    400034: Spot02
+    400036: Spot02.Target
+    400038: surface table
+    2300000: coffee
+    2300002: don't try to bend spoon hi
+    2300004: don't try to bend spoon lo
+    2300006: hi rez cup
+    2300008: hi- rez saucer
+    2300010: lo rez cup
+    2300012: lo rez saucer
+    2300014: surface table
+    3300000: coffee
+    3300002: don't try to bend spoon hi
+    3300004: don't try to bend spoon lo
+    3300006: hi rez cup
+    3300008: hi- rez saucer
+    3300010: lo rez cup
+    3300012: lo rez saucer
+    3300014: surface table
+    4300000: surface table
+    4300002: lo rez cup
+    4300004: don't try to bend spoon lo
+    4300006: lo rez saucer
+    4300008: don't try to bend spoon hi
+    4300010: coffee
+    4300012: hi rez cup
+    4300014: hi- rez saucer
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 

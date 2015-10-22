@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: 730753901e6d27849a9eb01eeecd0dc6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: beard 1
+    100002: beard 2
+    100004: beard down
+    100006: body
+    100008: eyeblack 1
+    100010: eyeblack 2
+    100012: eyebrow 1
+    100014: eyebrow 2
+    100016: eyelid 1
+    100018: eyelid 2
+    100020: eyewhite 1
+    100022: eyewhite 2
+    100024: hair
+    100026: mouth 1
+    100028: mouth 2
+    100030: mouth 3
+    100032: mouth 4
+    100034: //RootNode
+    100036: tail
+    400000: beard 1
+    400002: beard 2
+    400004: beard down
+    400006: body
+    400008: eyeblack 1
+    400010: eyeblack 2
+    400012: eyebrow 1
+    400014: eyebrow 2
+    400016: eyelid 1
+    400018: eyelid 2
+    400020: eyewhite 1
+    400022: eyewhite 2
+    400024: hair
+    400026: mouth 1
+    400028: mouth 2
+    400030: mouth 3
+    400032: mouth 4
+    400034: //RootNode
+    400036: tail
+    2300000: beard 1
+    2300002: beard 2
+    2300004: beard down
+    2300006: body
+    2300008: eyeblack 1
+    2300010: eyeblack 2
+    2300012: eyebrow 1
+    2300014: eyebrow 2
+    2300016: eyelid 1
+    2300018: eyelid 2
+    2300020: eyewhite 1
+    2300022: eyewhite 2
+    2300024: hair
+    2300026: mouth 1
+    2300028: mouth 2
+    2300030: mouth 3
+    2300032: mouth 4
+    2300034: tail
+    3300000: beard 1
+    3300002: beard 2
+    3300004: beard down
+    3300006: body
+    3300008: eyeblack 1
+    3300010: eyeblack 2
+    3300012: eyebrow 1
+    3300014: eyebrow 2
+    3300016: eyelid 1
+    3300018: eyelid 2
+    3300020: eyewhite 1
+    3300022: eyewhite 2
+    3300024: hair
+    3300026: mouth 1
+    3300028: mouth 2
+    3300030: mouth 3
+    3300032: mouth 4
+    3300034: tail
+    4300000: body
+    4300002: tail
+    4300004: eyelid 2
+    4300006: eyewhite 1
+    4300008: eyelid 1
+    4300010: eyewhite 2
+    4300012: eyeblack 2
+    4300014: eyeblack 1
+    4300016: eyebrow 1
+    4300018: eyebrow 2
+    4300020: mouth 2
+    4300022: mouth 1
+    4300024: mouth 4
+    4300026: mouth 3
+    4300028: beard 2
+    4300030: beard 1
+    4300032: beard down
+    4300034: hair
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 1
+  userData: 
