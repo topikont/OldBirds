@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System;
 
 public class IndividualMovement : MonoBehaviour {
-	public int moveSpeed = 4;
-	public float turnSpeed = 35f;
+	public int moveSpeed = 5;
+	public float turnSpeed = 30f;
 	public bool randomMovement = true;
 	public Transform determinedPath = null;
 	public bool rotatingTowardsObject = false;

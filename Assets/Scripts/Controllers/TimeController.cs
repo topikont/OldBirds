@@ -70,13 +70,9 @@ public class TimeController : MonoBehaviour {
 		eventPanelArray = new List<RectTransform>();
 		if (this.GetComponent<MainController> ()) {
 			mainController = this.GetComponent<MainController>();
-			RMBirds = mainController.randomMovementObjects;
-			DMBirds = mainController.determinedPathObjects;
 		}
 
-		timeSpeed = 1f;
-		
-	
+		timeSpeed = 1f;	
 		
 		// start the simulated time 
 		cCalendar.setYear(DateTime.Now.Year);
@@ -367,21 +363,6 @@ public class TimeController : MonoBehaviour {
 	private void SetGameSpeed(int speed) {
 		if(timeSpeed < Math.Abs(1024)) {
 			timeSpeed = timeSpeed * speed;
-			if(RMBirds != null) { // Deprecated
-				foreach(GameObject bird in RMBirds) {
-					IndividualMovement moveScript = bird.GetComponent<IndividualMovement>();
-					moveScript.moveSpeed = moveScript.GetDefaultMoveSpeed() * (int)timeSpeed;
-					moveScript.turnSpeed = moveScript.GetDefaultTurningSpeed() * Math.Abs((int)timeSpeed);
-				}
-			}
-
-			if(DMBirds != null) { // Deprecated
-				foreach(GameObject bird in DMBirds) {
-					IndividualMovement moveScript = bird.GetComponent<IndividualMovement>();
-					moveScript.moveSpeed = moveScript.GetDefaultMoveSpeed() * (int)timeSpeed;
-					moveScript.turnSpeed = moveScript.GetDefaultTurningSpeed() * Math.Abs((int)timeSpeed);
-				}
-			}
 
 			if(timeTiedObjects != null) {
 				setSpeedForObjects();
@@ -585,4 +566,7 @@ public class TimeController : MonoBehaviour {
 		return new DateTime(cCalendar.year, cCalendar.month, cCalendar.day, cCalendar.hour, cCalendar.minute, (int)cCalendar.seconds);
 	}
 
+	public float getTimeSpeed() {
+		return timeSpeed;
+	}
 }
