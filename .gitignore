@@ -43,8 +43,9 @@ Temporary Items
 .apdisk
 
 
-.sln
-.unityproj
-.csproj
-.log
-.bin
+*.sln
+*.unityproj
+*.csproj
+*.log
+*.bin
+*.userprefs
