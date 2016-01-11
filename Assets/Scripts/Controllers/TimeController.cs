@@ -50,8 +50,6 @@ public class TimeController : MonoBehaviour {
 	
 	private List<RectTransform> eventPanelArray;
 
-	public IndividualMovement[] timeTiedObjects;
-	
 	// If this is other than 0, event with this id will be deleted on next save button press
 	private int currentEventId = 0;
 	
@@ -82,8 +80,6 @@ public class TimeController : MonoBehaviour {
 		cCalendar.setSpeed(timeSpeed);
 		cCalendar.resume ();
 
-		setSpeedForObjects ();
-		
 		UpdateCalendar();
 	}
 	
@@ -142,16 +138,6 @@ public class TimeController : MonoBehaviour {
 		          !(hours == "23" && minutes == "59") &&
 					midNightUpdate == true){
 			midNightUpdate = false;
-		}
-	}
-
-	void setSpeedForObjects ()
-	{
-		if (timeTiedObjects != null) {
-			foreach(IndividualMovement movement in timeTiedObjects) {
-				movement.moveSpeed = movement.GetDefaultMoveSpeed() * (int)timeSpeed;
-				movement.turnSpeed = movement.GetDefaultTurningSpeed() * Math.Abs((int)timeSpeed);
-			}
 		}
 	}
 
@@ -364,9 +350,6 @@ public class TimeController : MonoBehaviour {
 		if(timeSpeed < Math.Abs(1024)) {
 			timeSpeed = timeSpeed * speed;
 
-			if(timeTiedObjects != null) {
-				setSpeedForObjects();
-			}
 			cCalendar.setSpeed(timeSpeed);
 			statusText.text = timeSpeed + "x";
 		}

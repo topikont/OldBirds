@@ -2,7 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement\MovementController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Movement\MovementController.cs" Line="10" Column="36" />
+      <File FileName="Assets\Scripts\Movement\MovementController.cs" Line="11" Column="100" />
+      <File FileName="Assets\Scripts\Controllers\MainController.cs" Line="25" Column="25" />
+      <File FileName="Assets\Scripts\Controllers\TimeController.cs" Line="569" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
