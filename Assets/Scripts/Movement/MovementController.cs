@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
+/*
+ * Movement controller handles the movement of the bird avatars.
+ * Movement can be either through preset waypoint path, or through random waypoints
+ * The MovementController script must be attached to the bird avatars
+ */
 public class MovementController : MonoBehaviour {
 	//Movement and turning speed variables for the bird avatars
 	public int moveSpeed = 20;
@@ -24,8 +29,6 @@ public class MovementController : MonoBehaviour {
 	public List<Transform> randomWaypoints;
 	public List<Transform> visitedWaypoints;
 
-	TimeController tc;
-	
 	DateTime stoppedAtTime;
 	DateTime leaveTime;
 	private enum MovementStates { MOVING, STOPPED }
@@ -35,26 +38,24 @@ public class MovementController : MonoBehaviour {
 	private Transform lastWaypoint;
 
 	void Awake() {
+		//Find and set the first waypoint
 		SetFirstWaypoint ();
 
+		//Initialize calculatedMoveSpeed to the default moveSpeed
 		calculatedMoveSpeed = moveSpeed;
 
+		//Set the bird avatar in motion
 		currentState = MovementStates.MOVING;
-
 		rotatingTowardsObject = true;
 		movingTowardsObject = true;
 
 		randomWaypoints = new List<Transform>();
 		visitedWaypoints = new List<Transform>();
-
-		if (GameObject.Find ("MainController").GetComponent<TimeController> () != null) {
-			tc = GameObject.Find ("MainController").GetComponent<TimeController> ();
-		}
 	}
 	
 	void Update() {
-
-		//Get current gamespeed from the timecontroller set in maincontroller
+		//Get current gamespeed from the timecontroller set in maincontroller and calculate bird avatar's movement speed
+		//TODO: Null checks
 		TimeController tc = GameObject.Find ("MainController").GetComponent<TimeController>();
 		float timeSpeed = tc.getTimeSpeed();
 		calculatedMoveSpeed = moveSpeed * (int)timeSpeed;
@@ -107,6 +108,9 @@ public class MovementController : MonoBehaviour {
 		}
 	}
 
+	/*
+	 *	Finds and set the next waypoint
+	 */
 	public void SetNextWaypoint () {
 
 		//Check if waypoints actually exist

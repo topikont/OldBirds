@@ -28,7 +28,8 @@ public class TimeController : MonoBehaviour {
 	private GameObject[] RMBirds;
 	private GameObject[] DMBirds;
 	private List<BirdEvent> events;
-	
+
+	//UI elements
 	public Text GUICalendarMonday;
 	public Text GUICalendarTuesday;
 	public Text GUICalendarWednesday;
@@ -38,10 +39,12 @@ public class TimeController : MonoBehaviour {
 	public Text GUICalendarSunday;
 	
 	public ArrayList GUICalDays = new ArrayList();
-	
+
+	//UI elements
 	public Text dateText;
 	public Text timeText;
 	public Text statusText;
+
 	public int startingDay = DateTime.Now.Day;
 	public int startingHour = 16;
 	
@@ -54,9 +57,17 @@ public class TimeController : MonoBehaviour {
 	private int currentEventId = 0;
 	
 	private Color originalColor;
-	
+
 	// Use this for initialization
 	void Start () {
+		//Write the current date, time and simulation speed to the UI element's text components
+		dateText = GameObject.Find ("DateTxt").GetComponent<Text> ();
+		timeText = GameObject.Find ("TimeTxt").GetComponent<Text> ();
+		statusText = GameObject.Find ("StatusTxt").GetComponent<Text> ();
+
+		//Initialize timeSpeed
+		timeSpeed = 1f;	
+
 		GUICalDays.Add(GUICalendarMonday);
 		GUICalDays.Add(GUICalendarTuesday);
 		GUICalDays.Add(GUICalendarWednesday);
@@ -70,8 +81,6 @@ public class TimeController : MonoBehaviour {
 			mainController = this.GetComponent<MainController>();
 		}
 
-		timeSpeed = 1f;	
-		
 		// start the simulated time 
 		cCalendar.setYear(DateTime.Now.Year);
 		cCalendar.setDay(startingDay);
@@ -80,7 +89,10 @@ public class TimeController : MonoBehaviour {
 		cCalendar.setSpeed(timeSpeed);
 		cCalendar.resume ();
 
-		UpdateCalendar();
+		/*
+ 		 *	TODO: Calendar functionality not currently available
+		 */
+		//UpdateCalendar();
 	}
 	
 	// Update is called once per frame
@@ -296,8 +308,10 @@ public class TimeController : MonoBehaviour {
 		
 	}
 
+	/// <summary>
+	/// Pauses the time
+	/// </summary>
 	public void PauseTime() {
-		// Pauses the time
 		int speed = 0;
 		SetGameSpeed(speed);
 	}
